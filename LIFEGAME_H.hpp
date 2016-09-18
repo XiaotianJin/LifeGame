@@ -7,8 +7,8 @@
 #include<vector>
 #include<string>
 
-#include"GAME_H.h"
-#include"MAP_H.h"
+#include"GAME_H.hpp"
+#include"MAP_H.hpp"
 
 using std::vector;
 using std::string;
@@ -28,6 +28,7 @@ private:
 	bool InitFromFile(string filename);
 
 public:
+	bool GameInit(const int r, const int c);
 	bool GameInit();
 	bool GameInitWithFile();
 

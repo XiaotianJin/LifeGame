@@ -2,7 +2,7 @@
 #include<ctime>
 #include<cstdlib>
 
-#include"MAP_H.h"
+#include"MAP_H.hpp"
 
 using std::vector;
 
@@ -111,4 +111,9 @@ vector<vector<int>>::iterator MAP::begin()
 size_t MAP::size()
 {
 	return _map.size();
+}
+
+void MAP::clear()
+{
+	_map.clear();
 }

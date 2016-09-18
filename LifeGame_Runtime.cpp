@@ -2,8 +2,8 @@
 #include<windows.h>
 #include<iostream>
 
-#include"LIFEGAME_H.h"
-#include"CMD_GUI_H.h"
+#include"LIFEGAME_H.hpp"
+#include"CMD_GUI_H.hpp"
 
 using std::vector;
 

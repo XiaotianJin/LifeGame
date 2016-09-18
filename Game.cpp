@@ -1,6 +1,6 @@
 #include<iostream>
 
-#include"GAME_H.h"
+#include"GAME_H.hpp"
 
 bool GAME::SysInit()
 {

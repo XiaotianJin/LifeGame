@@ -23,6 +23,7 @@ public:
 	vector<vector<int>>::iterator end();
 	vector<vector<int>>::iterator begin();
 	size_t size();
+	void clear();
 };
 
 #endif // !MAP_H

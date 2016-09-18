@@ -7,8 +7,8 @@
 #include<windows.h>
 #include<ctime>
 
-#include"LIFEGAME_H.h"
-#include"MAP_H.h"
+#include"LIFEGAME_H.hpp"
+#include"MAP_H.hpp"
 
 using std::vector;
 using std::ifstream;
@@ -16,8 +16,19 @@ using std::cout;
 using std::endl;
 using std::cin;
 
+bool LIFEGAME::GameInit(const int r, const int c)
+{
+	gameMap.clear();
+	history.clear();
+	gameMap.mapRandomInit(r, c);
+	
+	return true;
+}
+
 bool LIFEGAME::GameInit()//to initialize the game, return true if succeed
 {
+	gameMap.clear();
+	history.clear();
 	cout << "Please Choose the Way for Init:" << endl;
 	cout << "1.Random" << endl;
 	cout << "2.Choose a setted map" << endl;
@@ -53,6 +64,8 @@ bool LIFEGAME::GameInit()//to initialize the game, return true if succeed
 
 bool LIFEGAME::InitFromFile(std::string filename)
 {
+	gameMap.clear();
+	history.clear();
 	ifstream file = ifstream(filename, std::ios::in);
 	if (!file)
 	{

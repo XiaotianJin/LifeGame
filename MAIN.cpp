@@ -21,7 +21,8 @@
 #include<windows.h>
 #include<conio.h>
 
-#include"LIFEGAME_H.h"
+#include"LIFEGAME_H.hpp"
+#include"UNITTEST_H.hpp"
 
 using namespace std;
 
@@ -70,6 +71,8 @@ bool init(GAME& toInit)
 int main()
 {
 	Welcome();
+	//UnitTestMain();
+	//return 0;
 
 	LIFEGAME game;
 
